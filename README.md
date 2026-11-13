@@ -63,35 +63,35 @@ Creación de cuenta con validación de campos (`@Email`, `@Size`) y generación 
 ### 4.3. Inicio de Sesión (`POST /api/auth/login`)
 Autenticación de usuario registrado y obtención del token `Bearer` válido.
 
-![Login de Usuario](img/03_login_jwt.png)
+![Login de Usuario](img/login.png)
 
 ---
 
 ### 4.4. Operación CREATE (`POST /api/productos` con JWT)
 Creación de un nuevo producto enviando el token en `Auth -> Bearer Token` y validando los datos mediante `ProductoRequestDTO`.
 
-![Crear Producto JWT](img/04_post_crear_producto.png)
+![Crear Producto JWT](img/crear_producto.png)
 
 ---
 
-### 4.5. Operación READ Paginada (`GET /api/productos` con JWT)
+### 4.5. Operación LISTAR paguinando (`GET /api/productos` con JWT)
 Consulta del listado de productos paginado con la información de la categoría integrada en `ProductoResponseDTO`.
 
-![Listar Productos Paginado](img/05_get_productos_paginado.png)
+![Listar Productos Paginado](img/listar_vpn.png)
 
 ---
 
-### 4.6. Operación UPDATE (`PUT /api/productos/{id}` con JWT)
+### 4.6. Operación actualizar UPDATE (`PUT /api/productos/{id}` con JWT)
 Actualización de un producto existente devolviendo código `200 OK`.
 
-![Actualizar Producto](img/06_put_actualizar_producto.png)
+![Actualizar Producto](img/actualizar.png)
 
 ---
 
 ### 4.7. Operación DELETE (`DELETE /api/productos/{id}` con JWT)
 Eliminación de un registro en MySQL confirmada con respuesta JSON.
 
-![Eliminar Producto](img/07_delete_eliminar_producto.png)
+![Eliminar Producto](img/eliminar_von.png)
 
 ---
 
