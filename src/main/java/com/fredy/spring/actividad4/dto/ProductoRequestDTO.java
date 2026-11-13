@@ -4,6 +4,7 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
+// Este DTO se utiliza para recibir los datos de un producto desde el cliente, y se valida que los campos cumplan con ciertas condiciones
 
 public record ProductoRequestDTO(
     @NotBlank(message = "El nombre del producto no puede estar vacío")

@@ -16,6 +16,9 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+//esto es un filtro que se ejecuta una vez por cada solicitud HTTP entrante. Su propósito principal es interceptar las solicitudes y 
+// verificar si contienen un token JWT válido en el encabezado de autorización. Si el token es válido, el filtro autentica al usuario correspondiente
+//  y establece su contexto de seguridad para que pueda acceder a los recursos protegidos de la aplicación.
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 

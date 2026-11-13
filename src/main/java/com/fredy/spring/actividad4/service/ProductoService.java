@@ -13,6 +13,8 @@ import com.fredy.spring.actividad4.entity.Producto;
 import com.fredy.spring.actividad4.repository.CategoriaRepository;
 import com.fredy.spring.actividad4.repository.ProductoRepository;
 
+
+// Servicio para manejar la lógica de negocio relacionada con los productos
 @Service
 public class ProductoService {
 

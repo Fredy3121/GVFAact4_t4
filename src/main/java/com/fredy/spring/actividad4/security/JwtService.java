@@ -14,6 +14,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 
+//este servicio se encarga de generar y validar tokens JWT para la autenticación de usuarios en la aplicación.
 @Service
 public class JwtService {
 

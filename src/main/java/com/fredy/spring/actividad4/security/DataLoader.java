@@ -8,6 +8,7 @@ import com.fredy.spring.actividad4.entity.Producto;
 import com.fredy.spring.actividad4.repository.CategoriaRepository;
 import com.fredy.spring.actividad4.repository.ProductoRepository;
 
+//dos productos de prueba, uno de papeleria y otro de tecnologia que se cargan al iniciar la aplicacion si no hay categorias en la base de datos
 @Component
 public class DataLoader implements CommandLineRunner {
 

@@ -22,6 +22,8 @@ import com.fredy.spring.actividad4.service.ProductoService;
 
 import jakarta.validation.Valid;
 
+// Controlador REST para manejar las solicitudes relacionadas con los productos
+
 @RestController
 @RequestMapping("/api/productos")
 public class ProductoController {

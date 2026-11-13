@@ -21,6 +21,8 @@ import com.fredy.spring.actividad4.repository.UsuarioRepository;
 
 import jakarta.servlet.http.HttpServletResponse;
 
+
+//este es el archivo de configuracion de seguridad, donde se definen los filtros y la autenticacion de usuarios
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
