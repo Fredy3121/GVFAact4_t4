@@ -1,0 +1,24 @@
+info:
+  name: registrar vpn
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://179.197.84.73:8087/api/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "fredy azarel",
+        "email": "azarelvasquez56@gmail.com",
+        "password": "fredyazarel12"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

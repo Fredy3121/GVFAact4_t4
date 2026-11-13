@@ -1,0 +1,27 @@
+info:
+  name: actualizar
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: http://localhost:8087/api/productos/3
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "hojas oficiooooo",
+        "precio": 4,
+        "stock": 20,
+        "categoriaId": 1
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhemFyZWx2YXNxdWV6NTZAZ21haWwuY29tIiwiaWF0IjoxNzk0NTM5NTI3LCJleHAiOjE3OTQ2MjU5Mjd9.naWExZn4stgKXaNBq-MyeG76ulofkSgGEAxdHt_1U3NDWP8UIlo808CxjC6X2hvG
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,27 @@
+info:
+  name: crear producto
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:8087/api/productos
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "hojas",
+        "precio": 2,
+        "stock": 20,
+        "categoriaId": 1
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhemFyZWx2YXNxdWV6NTZAZ21haWwuY29tIiwiaWF0IjoxNzk0NTM5NTI3LCJleHAiOjE3OTQ2MjU5Mjd9.naWExZn4stgKXaNBq-MyeG76ulofkSgGEAxdHt_1U3NDWP8UIlo808CxjC6X2hvG
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
