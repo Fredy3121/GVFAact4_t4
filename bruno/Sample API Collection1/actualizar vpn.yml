@@ -1,0 +1,27 @@
+info:
+  name: actualizar vpn
+  type: http
+  seq: 15
+
+http:
+  method: PUT
+  url: http://179.197.84.73:8087/api/productos/3
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "hojas oficiooooo 2.0",
+        "precio": 4,
+        "stock": 20,
+        "categoriaId": 1
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhemFyZWx2YXNxdWV6NTZAZ21haWwuY29tIiwiaWF0IjoxNzk0NTQxNjk4LCJleHAiOjE3OTQ2MjgwOTh9.F0L5YWbHAfZb1TtFdKpvjyqePwapRo2UAnmlDUYsR3Y7VNJzArKdKDz0Qf7WmjUM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
