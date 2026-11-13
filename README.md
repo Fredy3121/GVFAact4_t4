@@ -49,14 +49,14 @@ La colección completa de pruebas de la API se encuentra almacenada y versionada
 ### 4.1. Bloqueo de Seguridad sin Token (`401 Unauthorized`)
 Petición a un endpoint protegido (`/api/productos`) sin incluir encabezado `Authorization`, verificando que Spring Security rechace el acceso.
 
-![Acceso Denegado Sin Token](img/01_sin_token_401.png)
+![Acceso Denegado Sin Token](img/sin_token.png)
 
 ---
 
 ### 4.2. Registro de Usuario (`POST /api/auth/register`)
 Creación de cuenta con validación de campos (`@Email`, `@Size`) y generación del token JWT sin exponer la contraseña en la respuesta.
 
-![Registro de Usuario](img/02_register_jwt.png)
+![Registro de Usuario](img/registro_vpn.png)
 
 ---
 
